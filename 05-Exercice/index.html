@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice - chaine-caractere</title>
+</head>
+
+<body>
+    <script>
+    'use strict';
+
+    const SENTENCE = 'The strength of JavaScript is that you can do anything. The weakness is that you will.';
+
+    console.log('La phrase entière :', SENTENCE);
+    console.log('La longueur de la chaine de caractères :', SENTENCE.length);
+    console.log('La position du mot JavaScript :', SENTENCE.indexOf('JavaScript'));
+    console.log('La position du dernier "is" :', SENTENCE.lastIndexOf('is'));
+    console.log('La dernière phrase seulement:', SENTENCE.slice(SENTENCE.lastIndexOf('.') + 2));
+    console.log('Les 10 caractères à partir du 17ième caractère:', SENTENCE.substr(17, 10));
+    console.log('Combien de mots dans la phrase:', SENTENCE.split(' ').length);
+    console.log('Le 61ième caractère:', SENTENCE.charAt(60));
+    console.log('Remplacer "you" par "I" dans toute la phrase:', SENTENCE.replace(/you/g, 'I'));
+    </script>
+</body>
+
+</html>
