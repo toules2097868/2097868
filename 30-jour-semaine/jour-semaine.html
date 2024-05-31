@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice - jour-semaine</title>
+        <style>
+            label {
+                width: 100px;
+                display: inline-block;
+            }
+
+            body>div {
+                width: 300px;
+                background-color: #ebec9f;
+                border: 1px solid #9F0000;
+                padding: 4px;
+                font-size: 20px;
+            }
+        </style>
+        <script src="js/jour-semaine.js"></script>
+    </head>
+
+    <body>
+        <h1>Jour semaine</h1>
+        <div>
+            <div>
+                <label for="language">FR / EN</label>
+                <input type="checkbox" id="language" />
+            </div>
+            <div>
+                <label for="dayNumber">Numéro du jour</label>
+                <input type="range" id="dayNumber" min="0" max="6" value="0" />
+            </div>
+        </div>
+    </body>
+
+</html>
