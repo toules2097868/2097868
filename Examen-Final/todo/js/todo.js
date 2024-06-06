@@ -42,3 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
             updateTaskTotal();
         }
     }
+	//ajouter une tâche avec le bouton Ajout
+    addButton.addEventListener('click', addTask);
+
+    //ajouter une tâche avec la touche "Enter"
+    taskInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            addTask();
+        }
+    });
