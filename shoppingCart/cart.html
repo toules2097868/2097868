@@ -1,0 +1,51 @@
+<html>
+<head>
+  <link rel="stylesheet" href="cart.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <div id="w">
+    <header id="title">
+      <h1>HTML5/CSS3 Shopping Cart UI</h1>
+    </header>
+    <div id="page">
+      <table id="cart" class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="first">Image</th>
+            <th scope="col" class="second">Qty</th>
+            <th scope="col" class="third">Product</th>
+            <th scope="col" class="fourth">Unit Price</th>
+            <th scope="col" class="fifth"> Total</th>
+            <th scope="col" class="sixth">&nbsp; Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- shopping cart contents -->
+         
+          
+          <!-- tax + subtotal -->
+          <tr class="extracosts">
+            <td class="light">Shipping &amp; Tax</td>
+            <td colspan="2" class="light"></td>
+            <td>$7</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr class="totalprice">
+            <td class="light">Total:</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2"><span class="thick">$86</span></td>
+          </tr>
+          
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script type="text/javascript"  src="cart.js">
+  
+  </script>
+</body>
+</html>
