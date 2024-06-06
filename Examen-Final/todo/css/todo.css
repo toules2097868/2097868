@@ -1,0 +1,29 @@
+main {
+    width: 800px;
+    margin: auto;
+}
+
+section {
+    border: 2px solid black;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.section-form input {
+    margin-bottom: 20px;
+}
+
+.section-list ol {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.section-list li span {
+    cursor: pointer;
+}
+
+.strike-task {
+    text-decoration: line-through;
+    background-color: lightgray;
+}

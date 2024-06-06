@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/todo.css">
+        <script src="js/todo.js"></script>
+        <title>TODO</title>
+    </head>
+
+    <body>
+        <main>
+            <h1>TODO</h1>
+
+            <section class="section-form">
+                <h3>Ajouter une tache</h3>
+                <div>
+                    <input type="text" name="taskInput" id="taskInput" size="85">
+                </div>
+                <div>
+                    <button disabled id="addButton">Ajout</button>
+                </div>
+            </section>
+
+            <section class="section-list">
+                <h3>List de tache <span id="taskTotal"></span></h3>
+                <ol id="taskList">
+
+                </ol>
+
+                <div>
+                    <button disabled id="deleteButton">Supression</button>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
