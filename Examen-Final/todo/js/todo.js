@@ -51,3 +51,21 @@ document.addEventListener('DOMContentLoaded', function() {
             addTask();
         }
     });
+	//Fonction pour mettre à jour le nombre total de tâches
+    function updateTaskTotal() {
+        taskTotal.textContent = `(${taskList.children.length})`;
+    }
+	//Fonction pour supprimer les tâches sélectionnées
+    function deleteSelectedTasks() {
+        const selectedTasks = Array.from(taskList.children).filter(li => li.querySelector('input[type="checkbox"]').checked);
+        selectedTasks.forEach(task => taskList.removeChild(task));
+        updateButtonStatus();
+        updateTaskTotal();
+    }
+
+    //supprimer les tâches sélectionnées
+    deleteButton.addEventListener('click', deleteSelectedTasks);
+
+    //Mettre à jour 
+    updateButtonStatus();
+});
